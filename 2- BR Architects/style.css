@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* border: 1px solid red; */
+    /* width: 100vw;
+    height: 100vh; */
+    overflow-x: hidden;
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: white;
+    height: auto;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.75);
+}
+
+.leftbox{
+    margin: 15px 30px;
+    /* border: 1px solid blue; */
+    padding: 10px;
+    cursor: pointer;
+}
+.leftbox:hover{
+    background-color: rgb(150, 143, 143);
+}
+
+.leftbox h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.leftbox  a{
+    color: black;
+    text-decoration: none;
+}
+.rightbox .nav-links{
+    display: flex;
+    /* border: 1px solid green; */
+    justify-content: space-between;
+    margin: 8px 30px;
+    padding: 10px;
+}
+
+.nav-links li{
+    list-style-type: none;
+    padding: 4px 20px;
+}
+.nav-links li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    /* border: 1px solid white; */
+    padding: 10px 8px;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-links li:hover{
+    background-color: rgb(150, 143, 143);
+}
+.top-container img{
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+}
+
+/* projects css */
+.projects{
+    margin: 50px auto;
+    /* border: 1px solid red; */
+    width: 94%;
+    height: auto;
+    padding: 5px;
+}
+.projects h1{
+    border: 1px solid rgb(179, 175, 175);
+    padding: 20px 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+.project-images{
+    /* border: 1px solid blue; */
+    margin: 30px 0px;
+}
+.project-images div{
+    display: inline;
+    position: relative;
+}
+
+.project-images img{
+    width: 24%;
+    margin: 0px 4px ;
+}
+
+/* about section css */
+.about{
+    width: 94%;
+    height: auto;
+    margin: 20px auto;
+    /* border: 1px solid green; */
+    padding: 5px;
+}
+.about h1{
+    border: 1px solid rgb(179, 175, 175);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+.about p{
+    /* border: 1px solid red; */
+    padding: 5px;
+    margin: 18px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+.team{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    margin: 25px 0px;
+    display: flex;
+}
+.member{
+    /* border: 1px solid red; */
+    width: 24%;
+    height: auto;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.member img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.member-name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 10px 0px 0px 0px;
+}
+.designation{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(53, 47, 47);
+    font-size: 13px;
+}
+.desc{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(53, 47, 47);
+    font-size: 15px;
+}
+.contact-button{
+    display: block;
+    padding: 8px 10px;
+    font-size: 17px;
+    background-color: rgb(199, 199, 199);
+    border: none;
+    height: 37px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact-button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+/* contact-form */
+.contact-form-section{
+    margin: 40px auto;
+    /* border: 1px solid red; */
+    width: 94%;
+    height: auto;
+}
+.contact-form-section h2{
+    border: 1px solid rgb(179, 175, 175);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+.contact-form-section p{
+    margin: 10px 0px;
+}
+.contact-form-section p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 0px;
+}
+.contact-form div{
+    margin: 10px 0px;
+}
+.contact-form div input{
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    font-size: 17px;
+    border: 1px solid rgb(179, 175, 175);
+}
+.send-message{
+    margin-top: 20px;
+    display: inline-block;
+    height: 50px;
+    width: 140px;
+    font-family:sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+}
+.send-message:hover{
+    background-color: rgb(150, 143, 143);
+    cursor: pointer;
+    color: black;
+}
+
+/* bottom image */
+.bottom-image{
+    width: 94%;
+    margin: 20px auto;
+}
+.bottom-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+.footer a{
+    color: white;
+}
+.footer a:hover{
+    color: rgb(78, 231, 78);
+}

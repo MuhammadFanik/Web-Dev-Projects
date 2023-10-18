@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+}
+nav.nav-menu{
+    width: 25%;
+    height: 100vh;
+    background-color: #f44336;
+    position: fixed;
+    top: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-menu h2{
+    /* border: 1px solid blue; */
+    margin: 80px 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.menu-links ul{
+    list-style-type: none;
+    /* border: 1px solid black; */
+    padding: 20px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.menu-links ul li{
+    /* border: 1px solid blue; */
+    padding: 12px 6px;
+}
+.menu-links ul a{
+    text-decoration: none;
+    color: white;
+    display: block;         /* This makes the whole link area clickable, not just the text */
+}
+.menu-links ul li:hover{
+    cursor: pointer;
+    background-color: white;
+    
+}
+.menu-links ul li:hover a{
+    color: black;
+}
+
+.main-content{
+    margin-left: 28%;
+    margin-top: 80px;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* header section css */
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.header h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+}
+.header h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    color:  #f44336;
+}
+.partition{
+    background-color: red;
+    width: 80px;
+    border-radius: 5px;
+    height: 6px;
+}
+
+/* main images css */
+.main-images{
+    margin-top: 40px;
+}
+.main-images img{
+    width: 48%;
+    margin: 0px 4px;
+    opacity: 0.7;
+}
+.main-images img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* services section */
+.services-section{
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services-section h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color:  #f44336;
+}
+.services-section p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/* designers section css */
+.designers-section{
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.designers-section h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color:  #f44336;
+}
+.designers-section p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.designers-section .intro{
+    font-weight: bold;
+}
+.designers-section .members{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.members .member{
+    width: 100%;
+    height: auto;
+    margin: 0px 4px;
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.member img{
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    filter: grayscale(70%);
+    
+}
+.member h3{
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.member p.designation{
+    color: rgb(121, 119, 119);
+    margin-left: 20px;
+}
+.member p.desc{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* packages section css */
+.payment-plans{
+    display: flex;
+    justify-content: space-between;
+}
+.packages-section{
+
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.packages-section h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color:  #f44336;
+}
+.packages-section p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.payment-plans{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.payment-plans ul{
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.payment-plans .plan-1 ul li:first-child{
+    background-color: rgb(104, 102, 102);
+    padding: 25px 0px;
+    font-size: 24px;
+    color: white;
+}
+.payment-plans .plan-1 ul li:last-child{
+    border: none;
+}
+.payment-plans .plan-1 ul li{
+    background-color: rgb(240, 239, 239);
+    border-bottom: 1px solid rgb(68, 67, 67);
+    padding: 15px 0px;
+}
+.plan-1{
+    width: 49%;
+    margin-right: calc(100% - 98%);
+}
+.plan-2{
+    width: 48%;
+}
+.payment-plans .plan-2 ul li:first-child{
+    background-color: #f44336;
+    padding: 25px 0px;
+    font-size: 24px;
+    color: white;
+}
+.payment-plans .plan-2 ul li:last-child{
+    border: none;
+}
+.payment-plans .plan-2 ul li{
+    background-color: rgb(240, 239, 239);
+    border-bottom: 1px solid rgb(68, 67, 67);
+    padding: 15px 0px;
+}
+.plan-1 button{
+    width: 130px;
+    height: auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.plan-1 button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.plan-2 button{
+    width: 130px;
+    height: auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f44336;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.plan-2 button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.payment-plans span{
+    font-size: 30px;
+}
+
+/* contact section css */
+.contact-section{
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-section h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color:  #f44336;
+}
+.contact-section p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.contact-section form{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.contact-section form label{
+    font-size: 16px;
+}
+.contact-section form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 45px;
+    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.contact-section form button{
+    width: 100%;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-section form button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+}
+
+/* footer section css */
+.footer{
+    margin-top: 50px;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(240, 239, 239);
+}
+.footer p{
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.footer p a{
+    color: black;
+}
+.footer p a:hover{
+    color: rgb(136, 134, 134);
+}
